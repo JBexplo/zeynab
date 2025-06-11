@@ -1,0 +1,353 @@
+<!-- Bonjour à vous !-->
+
+<!-- Vous venez de voir votre premier code d'une page internet -->
+
+<!-- Pour écrire un commentaire comme celui-ci c'est facile ! il suffit de mettre du texte entre ces symboles : (<! -- TEXTE -- >) -->
+<!-- Un commentaire n'a aucune influence dans le code ! Mes commentaires vous aiderons a vous guider dans le code de votre première page WEB -->
+
+
+<!-- Le language utilisé ici est le language HTML, c'est un language dit de "balisage" (qui utilise des balises) <> pour ouvrir une balise </> pour fermer -->
+<!--   Chaque balise à une fonctionnalitée unique, on peut apporter des paramères a une balise est une balise a du contenu, on peut mettre des balises dans des balises-->
+<!-- Exemple : <BALISE option="abc">  <p> A L'INTERIEUR DE MA BALISE </p>   </BALISE> -->
+<!-- Le HTML est utilisé pour structuré et apporté le contenu aux pages WEB, il peut aussi être utilisé pour écrire des scripts (code plus avancé)  -->
+<!-- Ou pour stylisé notre page (apporter couleurs, effets, dispositions et animations) -->
+
+
+
+<html lang="fr"> <!--         Tous fichiers HTML doit être entre la balise <html> </html>       -->
+
+
+
+<head> <!--         La balise  <head> </head> contient tous les paramètres de notre page                       -->
+    <meta charset="UTF-8">
+
+    <!-- Charger la Feuille de style dé-commenter la !-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <!-- Titre de l'onglet -->
+    <title>Mon site Internet</title>
+</head>
+
+
+
+
+
+
+
+<body>
+    <!-- Dans la balise  <   body  > </   body   > ce trouve tout le contenu de notre page internet,celui qui serra visible   -->
+
+
+    <div class="conteneur">
+        <h1>🌟 Mon Blog sur l'Espace 🌟</h1> <!-- h1 est utilisé pour faire des titres  -->
+
+        <p> <!-- la balise p est un Paragraphe -->
+            Bienvenue sur mon blog ! Ici, tu vas apprendre plein de choses incroyables sur l'univers. L'univers a
+            environ
+            <strong>13,8 milliards d'années</strong>
+            <!-- strong (fort en français) permet  de mettre le texte en gras, utile pour les éléments important  -->
+            , il est immense et en constante expansion !
+            On y trouve surtout deux gaz : <strong>l'hydrogène</strong> et <strong>l'hélium</strong>.
+            Mais sais-tu que dans le vide de l'espace, il y a aussi des poussières, des rayons cosmiques, des
+            astéroïdes,
+            des comètes, et même de mystérieuses ondes invisibles ? 🚀
+        </p>
+
+        <img id="univers" src="images/univers.png">
+
+        <h2 id="etoile">✨ Les Étoiles ✨</h2> <!-- h2 est un titre moins important que h1  -->
+
+        <p>
+            Une étoile naît dans un immense nuage de gaz et de poussières appelé <strong>nébuleuse</strong>.
+            Lorsque ce nuage s'effondre sous sa propre gravité, il chauffe très fort, jusq'à former une boule brillante
+            :
+            c'est la naissance d'une étoile ! 🌌
+        </p>
+
+        <p>
+            Les étoiles sont principalement composées de <strong>gaz</strong>, surtout d'<strong>hydrogène</strong> et
+            d'<strong>hélium</strong>.
+            Au cœur d'une étoile, il fait très chaud, plusieurs millions de degrés, ce qui lui permet de briller !
+        </p>
+
+        <h3>🔎 Quelques étoiles célèbres :</h3> <!-- h3 est un titre moins important que h2  -->
+
+
+
+
+        <ul> <!--  ul est une liste non ordonnée, c'est une liste de point ou chaque point est entre les balises li -->
+            <li><strong><a href="https://fr.vikidia.org/wiki/Soleil">Soleil</a></strong> : l’étoile de notre Système
+                solaire.</li>
+            <li><strong>Sirius</strong> : l'une des étoiles les plus brillantes visibles dans notre ciel nocturne.</li>
+            <li><strong>Bételgeuse</strong> : une géante rouge très grosse située dans la constellation d'Orion.</li>
+            <li><strong>Pollux</strong> : une étoile brillante visible dans la constellation des Gémeaux.</li>
+        </ul>
+
+
+        <p>
+            Les étoiles peuvent avoir différentes couleurs selon leur température : 🔵 les bleues sont très chaudes et
+            très jeunes, tandis que 🔴 les rouges sont plus froides et plus âgées.
+        </p>
+
+        <img src="images/etoiles.jpg">
+        <p>
+            Notre Soleil est une étoile jaune, de taille moyenne, et âgée d'environ 4,6 milliards d'années !
+        </p>
+
+        <!-- em est une emphase, une citation, le texte apparait en italique -->
+
+        <p><em>« Nous sommes tous faits de poussière d'étoiles. »</em> - Carl Sagan</p>
+
+        <h2>🪐 Les Planètes 🪐</h2>
+
+        <p>
+            Une planète se forme autour d'une étoile à partir de poussières, de roches et de gaz qui tournent autour.
+            Petit à petit, ces éléments s'agglomèrent pour former des planètes. 🌌
+        </p>
+
+        <p>
+            Dans notre Système solaire, il y a 8 planètes qui tournent autour du Soleil. On distingue deux grands types
+            :
+        </p>
+
+        <ul>
+            <li><strong>Planètes telluriques (faites de roches)</strong> : Mercure, Vénus, la Terre et Mars.</li>
+            <li><strong>Planètes gazeuses (géantes de gaz)</strong> : Jupiter, Saturne, Uranus et Neptune.</li>
+        </ul>
+
+        <h3>🌍 Planètes telluriques :</h3>
+
+        <p>
+            Elles sont faites principalement de <strong>roches et de métaux</strong>. Elles possèdent une surface
+            solide, parfois une atmosphère (comme la Terre), et parfois un champ magnétique qui protège des rayonnements
+            dangereux du Soleil.
+        </p>
+
+        <h3>💨 Planètes gazeuses :</h3>
+
+        <p>
+            Elles sont énormes et composées principalement de gaz comme l'<strong>hydrogène</strong> et
+            l'<strong>hélium</strong>. Elles n'ont pas de surface solide comme la Terre, mais un noyau rocheux caché
+            sous une épaisse couche de gaz.
+            Certaines possèdent de grands champs magnétiques, comme Jupiter, qui protège son environnement.
+        </p>
+
+        <h3>🚀 Toutes les planètes du Système solaire :</h3>
+
+        <ol> <!--  ol est une liste ordonnée, c'est une liste avec des chiffres où chaque élément est entre les balises li -->
+            <li><strong>Mercure</strong> : Très proche du Soleil, petite, rocheuse, sans atmosphère véritable.</li>
+            <li><strong>Vénus</strong> : Planète chaude avec une atmosphère dense, principalement composée de gaz
+                carbonique, nuages épais et toxiques.</li>
+            <li><strong>Terre</strong> : Notre planète bleue, unique avec beaucoup d'eau liquide, une atmosphère
+                respirable riche en oxygène et un fort champ magnétique.</li>
+            <li><strong>Mars</strong> : Surnommée « planète rouge », elle possède une fine atmosphère, de la glace aux
+                pôles et pourrait avoir abrité de la vie.</li>
+            </ul>
+        </ol>
+
+        <h3>🌀 Planètes gazeuses :</h3>
+
+        <ul>
+            <li><strong>Jupiter</strong> : La plus grande planète, géante gazeuse composée principalement
+                d'hydrogène et d'hélium, avec une énorme tempête appelée « Grande Tache Rouge ».</li>
+            <li><strong>Saturne</strong> : Connue pour ses magnifiques anneaux composés de glace, de poussières et
+                de roches.</li>
+            <li><strong>Uranus</strong> : Géante glacée très froide, composée surtout de glace d'eau, d'ammoniac et
+                de méthane, lui donnant une couleur bleutée.</li>
+            <li><strong>Neptune</strong> : Planète bleue lointaine et très froide, gazeuse également riche en
+                méthane.</li>
+        </ul>
+
+        <img src="images/planetes.png">
+
+        <h3>🌠 Autres caractéristiques intéressantes :</h3>
+
+        <ul>
+            <li><strong>Atmosphère :</strong> Seules quelques planètes en ont une épaisse (Terre, Vénus, les géantes
+                gazeuses). Elles protègent des météorites, contrôlent la température et permettent parfois la vie.
+            </li>
+            <li><strong>Champ magnétique :</strong> Certaines planètes (Terre, Jupiter, Saturne...) ont un champ
+                magnétique qui les protège du vent solaire.</li>
+        </ul>
+
+        <img src="images/aurore_atmo.jpg">
+
+        <p><em>« Quelque part, quelque chose d'incroyable attend d'être découvert. »</em> - Carl Sagan</p>
+
+        <h2>🛰️ Les autres objets du Système solaire 🛰️</h2>
+
+        <p>
+            En plus des planètes et des étoiles, notre Système solaire regorge d'autres objets fascinants plus
+            petits mais très intéressants !
+        </p>
+
+        
+
+        <h3>☄️ Les Astéroïdes ☄️</h3>
+        <p>
+            Les astéroïdes sont des gros morceaux de roche et de métal qui tournent autour du Soleil, principalement
+            entre Mars et Jupiter. On appelle cet endroit la <strong>ceinture d'astéroïdes</strong>.
+        </p>
+        <ul>
+            <li><strong>Composition :</strong> roches et métaux (fer, nickel).</li>
+            <li><strong>Exemples connus :</strong> Cérès, Vesta, Ida.</li>
+        </ul>
+
+        <h3>❄️ Les Comètes ❄️</h3>
+        <p>
+            Les comètes sont faites de glace, de poussières et de gaz gelés. Quand elles s'approchent du Soleil,
+            elles chauffent et forment une magnifique <strong>queue lumineuse</strong> visible depuis la Terre.
+        </p>
+        <ul>
+            <li><strong>Exemple célèbre :</strong> la comète de Halley, visible tous les 76 ans depuis la Terre !
+            </li>
+        </ul>
+
+        <h3>🌙 Les Satellites 🛰️</h3>
+        <p>
+            Un satellite est un objet qui tourne autour d'une planète. La Terre possède la Lune, son satellite
+            naturel. D'autres planètes en ont beaucoup : Jupiter possède au moins 95 satellites connus !
+        </p>
+        <ul>
+            <li><strong>La Lune (Terre)</strong> : satellite naturel de la Terre, sans atmosphère et recouverte de
+                cratères.</li>
+            <li><strong>Europe (Jupiter)</strong> : recouvert de glace et peut-être un océan d'eau liquide caché
+                sous sa surface.</li>
+            <li><strong>Titan (Saturne)</strong> : a une atmosphère épaisse et des lacs liquides de méthane à sa
+                surface.</li>
+        </ul>
+
+        <h3>🌑 Planètes naines et Pluton</h3>
+        <p>
+            Il existe aussi des planètes plus petites appelées <strong>planètes naines</strong>. Pluton est la plus
+            connue.
+        </p>
+        <ul>
+            <li><strong>Pluton :</strong> petite planète glacée très éloignée, possédant une fine atmosphère.</li>
+            <li><strong>Cérès :</strong> située dans la ceinture d'astéroïdes, composée principalement de roche et
+                de glace.</li>
+        </ul>
+
+        <h2>🌌 Objets célestes extraordinaires 🌌</h2>
+
+        <p>
+            L'univers cache de nombreux objets incroyables, étranges et fascinants. Voici quelques-uns des plus
+            étonnants !
+        </p>
+
+        <h3>🕳️ Les Trous noirs 🕳️</h3>
+        <p>
+            Un trou noir est une région de l'espace où la gravité est si forte que même la lumière ne peut pas
+            s'échapper ! Il se forme lorsqu'une <a href="#etoile">étoile</a> très massive meurt.
+        </p>
+        <ul>
+            <li><strong>Exemple :</strong> Sagittarius A*, le trou noir géant au centre de notre galaxie (la Voie
+                Lactée).</li>
+        </ul>
+
+        <img id="trou_noir" src="images/trou_noir.jpg" alt="">
+
+        <h3>🌠 Pulsars et Quasars 💫</h3>
+        <ul>
+            <li><strong>Pulsar :</strong> C’est une étoile morte qui tourne très vite sur elle-même et envoie des
+                signaux lumineux réguliers.
+                <em>Exemple notable :</em> le pulsar du Crabe.
+            </li>
+            <li><strong>Quasar :</strong> Objet très lumineux et puissant, situé très loin, alimenté par un énorme trou
+                noir. Il émet une très forte lumière visible à travers tout l'univers.</li>
+        </ul>
+
+        <h3>✨ Les étoiles spéciales : Naines blanches et géantes rouges ✨</h3>
+        <ul>
+            <li><strong>Naine blanche :</strong> Petite étoile très dense qui est ce qu'il reste après la mort d'une
+                étoile comme notre Soleil.</li>
+            <li><strong>Géante rouge :</strong> Étoile très grosse en fin de vie, très brillante, comme
+                <strong>Bételgeuse</strong> dans Orion.
+            </li>
+        </ul>
+
+        <h3>🌫️ Les Nébuleuses 🌌</h3>
+        <p>
+            Les nébuleuses (ou nébuleuses) sont de grands nuages colorés composés de gaz et de poussières, où naissent
+            les étoiles.
+        </p>
+        <ul>
+            <li><strong>Nébuleuse d’Orion :</strong> visible facilement depuis la Terre, c'est un endroit où naissent de
+                nombreuses étoiles.</li>
+        </ul>
+
+        <img src="images/vie_etoile.jpg">
+
+        <h3>🌌 Les Galaxies 🌌</h3>
+        <p>
+            Une galaxie est un ensemble de milliards d'étoiles, de gaz et de poussières. Il existe plusieurs types de
+            galaxies :
+        </p>
+        <ul>
+            <li><strong>Galaxie Spirale :</strong> comme notre galaxie, la Voie Lactée.</li>
+            <li><strong>Galaxie Elliptique :</strong> de forme ovale, sans bras visibles.</li>
+            <li><strong>Galaxie Irrégulière :</strong> sans forme précise, comme les nuages de Magellan.</li>
+        </ul>
+
+        <img src="images/galaxies.jpg">
+
+        <h3>🪐 Les planètes orphelines 🌑</h3>
+        <p>
+            Les planètes orphelines sont des planètes qui ne tournent pas autour d'une étoile. Elles errent seules dans
+            l'espace !
+        </p>
+
+        <h3>🚀 Quelques exemples fascinants :</h3>
+        <ul>
+            <li><strong>Trou noir supermassif :</strong> Sagittarius A*, situé au centre de notre galaxie.</li>
+            <li><strong>Quasar très lumineux :</strong> 3C 273, l'un des plus brillants connus.</li>
+            <li><strong>Pulsar célèbre :</strong> Pulsar du Crabe, situé dans la nébuleuse du Crabe.</li>
+        </ul>
+
+        <p class="source">Pour en savoir plus, visite :
+            <!-- a est un lien cliquable vers un URL -->
+            <a href="https://fr.vikidia.org/wiki/Espace">Vikidia - Espace</a>
+        </p>
+
+    </div>
+
+</body>
+
+
+<!-- <body>       
+
+    <h1>Bonjour bienvenue sur ma page</h1>
+
+
+
+    <p>Hello World !</p>
+    <p>Hello Haron!</p>
+    <p>Hello Haron!</p>
+
+
+    <div class="img-container">
+
+        <img width="250px" src="https://apod.nasa.gov/apod/image/2503/ThorHelmet_Hopkins_3888.jpg" alt="">
+    </div>
+
+
+
+    <div class="img-container">
+
+        <img width="250px" src="https://apod.nasa.gov/apod/image/2503/ThorHelmet_Hopkins_3888.jpg" alt="">
+    </div>
+
+    <aside>
+        <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+
+    <a href="https://apod.nasa.gov/apod/astropix.html"><p>cliquez ici pour voir d'autres images</p></a>
+
+    <footer>
+        <p>Salut !</p>
+    </footer>
+
+</body> -->
+
+</html>

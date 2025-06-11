@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕵️ Jeu de Piste HTML/CSS</title>
+    <style>
+        /* Étape 1 : Texte invisible */
+        .invisible {
+            color: white;
+        }
+
+        /* Étape 2 : Image minuscule */
+        .micro-image {
+            width: 1px;
+            height: 1px;
+        }
+
+        /* Étape 3 : Texte crypté avec une police symbolique */
+        @font-face {
+            font-family: "Symboles";
+            src: local("Wingdings"), local("Webdings");
+        }
+        .texte-crypte {
+            font-family: "Symboles", sans-serif;
+            font-size: 20px;
+        }
+
+        /* Étape 4 : Lien caché dans un texte noir souligné */
+        .lien-cache a {
+            color: inherit;
+            text-decoration: inherit;
+            cursor: default;
+        }
+
+        /* Étape 5 : Élément invisible, révélé en sélectionnant (Ctrl+A) */
+        .bonus-cache {
+            opacity: 0;
+        }
+
+        /* Étape 6 : Image verticale à tourner au survol */
+        .image-rotation {
+            width: 150px;
+            transform: rotate(0deg);
+            transition: transform 0.5s ease-in-out;
+        }
+        .image-rotation:hover {
+            transform: rotate(90deg); /* Rotation de 90° au survol */
+        }
+
+        /* Étape 7 : Texte minuscule à agrandir */
+        .texte-petit {
+            font-size: 2px; /* Presque illisible */
+        }
+
+        /* Étape 8 : Div qui masque du texte */
+        .overlay {
+            position: absolute;
+            width: 200px;
+            height: 30px;
+            background-color: white;
+            top: 50px;
+            left: 50px;
+        }
+
+        /* Étape 9 : Texte caché en dehors de l’écran */
+        .hors-ecran {
+            position: absolute;
+            left: -9999px;
+        }
+
+        /* Style général */
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Étape 1 : Texte blanc -->
+    <p class="invisible">Bien joué ! Maintenant, trouve l’image cachée.</p>
+
+    <!-- Étape 2 : Image minuscule -->
+    <img class="micro-image" src="https://via.placeholder.com/500x100?text=Agrandis-moi+!" alt="Image cachée à agrandir">
+
+    <!-- Étape 3 : Texte crypté -->
+    <p class="texte-crypte">Ce texte est crypté. Change la police pour voir le message !</p>
+
+    <!-- Étape 4 : Lien caché -->
+    <p class="lien-cache"><u>Ce texte semble ordinaire... mais où est le lien ?</u>
+        <a href="https://www.exemple.com" target="_blank">🎉 Bravo, tu as trouvé le lien secret ! 🎉</a>
+    </p>
+
+    <!-- Étape 5 : Texte invisible révélé en sélectionnant -->
+    <p class="bonus-cache">✨ Félicitations, tu as découvert ce texte caché ! ✨</p>
+
+    <!-- Étape 6 : Image verticale à tourner au survol -->
+    <img class="image-rotation" src="https://via.placeholder.com/150x300?text=Tourne-moi" alt="Image à faire pivoter">
+
+    <!-- Étape 7 : Texte minuscule à agrandir -->
+    <p class="texte-petit">Ce texte est trop petit pour être lu ! Modifie-le !</p>
+
+    <!-- Étape 8 : Div qui masque un texte (à déplacer) -->
+    <div class="overlay"></div>
+    <p style="position: relative; top: 50px; left: 50px;">Un texte est caché ici, sous un div blanc. Décale-le pour le voir !</p>
+
+    <!-- Étape 9 : Texte caché en dehors de l’écran -->
+    <p class="hors-ecran">Bravo ! Tu as trouvé le texte caché hors écran !</p>
+
+</body>
+</html>
